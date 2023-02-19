@@ -3,6 +3,7 @@ import {
   AiFillHome as HomeIcon,
 } from "react-icons/ai";
 
+import DarkModeSwitch from "./DarkModeSwitch";
 import Link from "next/link";
 import MenuItem from "./MenuItem";
 
@@ -13,7 +14,8 @@ export default function Header() {
         <MenuItem title="HOME" address="/" Icon={HomeIcon} />
         <MenuItem title="ABOUT" address="/about" Icon={AboutIcon} />
       </div>
-      <div>
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-300 py-1 px-2 rounded-lg mr-1">
