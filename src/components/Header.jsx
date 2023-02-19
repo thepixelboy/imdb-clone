@@ -18,7 +18,7 @@ export default function Header() {
         <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
-            <span className="font-bold bg-amber-300 py-1 px-2 rounded-lg mr-1">
+            <span className="font-bold bg-amber-300 py-1 px-2 rounded-lg mr-1 dark:text-gray-800">
               IMDb
             </span>
             <span className="text-xl hidden sm:inline">Clone</span>
