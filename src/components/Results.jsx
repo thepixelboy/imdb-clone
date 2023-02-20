@@ -1,10 +1,10 @@
+import Card from "./Card";
+
 export default function Results({ movies }) {
   return (
-    <div>
+    <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:gird-cols-5 max-w-6xl mx-auto py-4">
       {movies.map((movie) => (
-        <div key={movie.id}>
-          <h1>{movie.original_title}</h1>
-        </div>
+        <Card key={movie.id} movie={movie} />
       ))}
     </div>
   );
